@@ -1,0 +1,169 @@
+/*universal styles*/
+
+body {
+  margin:0;
+}
+
+html{
+  font-family: 'Prompt', sans-serif;
+}
+
+/*Header*/
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  top:0;
+  position: fixed;
+  z-index: 1;
+  width:auto;
+  background-color: White;
+  left:0;
+  right:0;
+}
+
+header .title {
+  display: flex;
+  align-items: center;
+  height:32px;
+}
+
+nav {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a {
+  color:black;
+  text-decoration: none;
+  line-height: 64px;
+}
+
+header a:nth-child(1n+2){
+  border-left:16px solid green;
+}
+
+/*upper 2 areas*/
+
+.banner.area{
+  margin-top: 64px;
+  position: relative;
+}
+
+.area {
+  padding-left:24px;
+  display:flex;
+}
+
+.banner {
+  background-color: grey;
+}
+
+.left-area{
+  width:60%;
+  padding-top:32px;
+  padding-bottom:32px;
+  padding-right:24px;
+  border-right:1px solid grey;
+}
+
+.large-photo{
+  width:100%;
+  height:auto;
+}
+
+.description{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  width:40%;
+}
+
+.description h1{
+  font-size: 30px;
+  font-weight: bold;
+  margin:0;
+}
+
+.description h4{
+  margin:24px 0 24px 0;
+  font-size:18px;
+}
+
+.botton {
+  background-color: black;
+  color:white;
+  width:70%;
+  padding-top:8px;
+  padding-bottom:8px;
+  text-align: center;
+  font-size:15px;
+}
+
+
+.banner2 h1{
+  margin-top:32px;
+  margin-bottom:24px;
+}
+
+.banner2 p{
+  margin:0;
+}
+
+.banner2  .description{
+  justify-content: flex-start;
+  padding-left:0;
+  padding-right:0;
+}
+
+.guide{
+  display:flex;
+  padding-bottom:16px;
+  padding-top:32px;
+  border-bottom: 1px solid grey;
+}
+
+.guide:nth-child(1n+2){
+  padding-top:16px;
+}
+
+.guide:nth-child(3n+0){
+  background-color: grey;
+}
+
+.guide .photo{
+  width:35%;
+  padding-left:16px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img{
+  max-width:100%;
+}
+
+.details{
+  padding-left:20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:65%;
+}
+
+.details h4{
+  margin:0;
+}
+
+.details p, a{
+  margin-top:8px;
+  margin-bottom:0px;
+  font-size:13px;
+}
