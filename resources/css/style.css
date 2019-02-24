@@ -166,25 +166,23 @@ header .mobile{
   font-weight:bold;
 }
 
-.botton {
-  background-color:hsl(0,0%,26%);
+.banner a{
   color:white;
-  width:60%;
+  text-decoration: none;
+  font-size: 20px;
+  line-height:36px;
+  background-color:hsl(0,0%,26%);
   padding-top:8px;
   padding-bottom:8px;
+  width:60%;
   text-align: center;
 }
 
-.botton:hover{
+.banner a:hover{
   background-color: navy;
   transition: background-color 80ms ease-out 50ms;
 }
 
-.botton a{
-  color:white;
-  text-decoration: none;
-  font-size: 20px;
-}
 
 @media only screen and (max-width:555px){
   .banner h1{
@@ -199,7 +197,7 @@ header .mobile{
     padding-left: 16px;
   }
 
-  .botton {
+  .banner a {
     margin-right: auto;
     margin-left: auto;
     margin-bottom:32px;
@@ -344,6 +342,9 @@ header .mobile{
 .category{
   width:100%;
   padding-bottom:32px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .category:nth-child(3n+2){
@@ -351,7 +352,7 @@ header .mobile{
   padding-right:32px;
 }
 
-.categories h4 {
+.categories a {
   margin-top:16px;
   margin-bottom:0;
   margin-left: 16px;
@@ -361,6 +362,10 @@ header .mobile{
   margin-top:8px;
   margin-left:16px;
   margin-bottom:0;
+}
+
+.category a{
+  font-size: 20px;
 }
 
 @media only screen and (max-width:555px){
@@ -381,14 +386,33 @@ header .mobile{
   }
 
   .categories {
-    display:block;
+    flex-direction: column;
   }
 
-  .categories h4{
-    margin:0;
+  .learning a{
+    padding-top: 16px;
+    padding-bottom:24px;
+    padding-left:16px;
+    margin-left: 0px;
+    margin-top:0px;
+    width:auto;
+    background-color: hsl(0,0%,91%)
   }
 
-  .category {
+  .learning a:hover{
+    background-color: navy;
+    color:white;
+    transition: background-color 80ms ease-out 50ms,
+                color 80ms ease-out 50ms;
+  }
+
+  .category{
+    padding-bottom:0px;
+    margin-bottom:8px;
+    width:100%;
+  }
+
+  .categoryd {
     padding-top:16px;
     padding-bottom:24px;
     margin-bottom:8px;
