@@ -107,7 +107,7 @@ nav {
   align-items: center;
 }
 
-header a {
+nav a{
   line-height: 64px;
   font-family:Helvetica;
   font-weight:350;
@@ -170,16 +170,14 @@ header .mobile{
   font-weight:bold;
 }
 
-.banner a{
+.btn{
   color:white;
-  text-decoration: none;
   font-size: 20px;
-  line-height:36px;
   background-color:hsl(0,0%,26%);
   padding-top:8px;
   padding-bottom:8px;
   width:60%;
-  text-align: center;
+  border:none;
 }
 
 .banner a:hover{
@@ -201,7 +199,7 @@ header .mobile{
     padding-left: 16px;
   }
 
-  .banner a {
+  .btn {
     margin-right: auto;
     margin-left: auto;
     margin-bottom:32px;
